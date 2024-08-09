@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-app-config
+data:
+  INTERVAL: "5 seconds"
+
