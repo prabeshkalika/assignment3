@@ -140,5 +140,4 @@ To see if our application is serving properly, make an HTTP GET request to the n
 ```bash
 curl <node-ip-from-minikube>:30000
 ```
-![alt text](image.png)
 **You have reached the end!**
