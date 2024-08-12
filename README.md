@@ -125,13 +125,6 @@ kubectl get deployments # should see a new deployment created
 kubectl get svc # should see a NodePort service
 ```
 
-**Test the Application**
-
-Now, let’s ensure the Kubernetes cluster is accessible and the application is running correctly.
-
-```bash
-kubectl get nodes -o wide
-```
 
 Note the IP of the node, we will need that later.
 
