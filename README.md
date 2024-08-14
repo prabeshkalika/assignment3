@@ -97,17 +97,11 @@ Create a `node-app-config.yaml` file with contents as such:
 ```yaml
 # node-app-service.yaml
 apiVersion: v1
-kind: Service
+kind: ConfigMap
 metadata:
-  name: node-app-service
-spec:
-  type: NodePort
-  ports:
-    - port: 80
-      targetPort: 80
-      nodePort: 30000
-  selector:
-    app: node-app
+  name: node-app-config
+data:
+  INTERVAL: "5 seconds"
 ```
 **Deploy to Kubernetes and the NodePort service**
 
